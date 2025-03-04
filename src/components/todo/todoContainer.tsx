@@ -25,7 +25,7 @@ const TodoContainer = () => {
             <p>There is no Task Available !!</p>
           </div>
         ) : (
-          todos.map((item) => (
+          todos?.map((item) => (
             <TodoCard
               {...item}
               key={item.id} // Use a unique identifier from the data
